@@ -7,3 +7,6 @@ if [[ ! -d "$HOME/.config" ]]; then
 fi
 
 cp -r ./nvim "$HOME/.config/nvim"
+
+./gitconfig.sh
+./get-nvim.sh
