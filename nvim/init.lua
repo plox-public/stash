@@ -16,8 +16,16 @@ vim.keymap.set('n', '<leader>q', ':quit<CR>', {noremap=true})
 
 vim.pack.add{
   { src = 'https://github.com/neovim/nvim-lspconfig' },
+  { src = 'https://github.com/ibhagwan/fzf-lua' },
 }
 
+-- plugin configurations
+--
+-- lsp-config
 vim.lsp.enable('pyright')
 vim.lsp.enable('clangd')
 vim.lsp.enable('rust-analyzer')
+
+-- fzf keybinds
+local fzf = require('fzf-lua')
+vim.keymap.set('n', '<leader>ff', fzf.files, { desc = 'Fzf Files' })
