@@ -8,9 +8,11 @@ vim.keymap.set('n', '<S-h>', ':bnext<CR>', {noremap=true})
 vim.keymap.set('n', '<leader>ls', ':ls<CR>', {noremap=true})
 vim.keymap.set('n', '<leader>e', ':Ex<CR>', {noremap=true})
 
--- save/quit shortcuts
+-- window splits
 vim.keymap.set('n', '<leader>ws', '<C-w>s<CR>', {noremap=true})
 vim.keymap.set('n', '<leader>wv', '<C-w>v<CR>', {noremap=true})
+
+-- save/quit shortcuts
 vim.keymap.set('n', '<leader>wq', ':write<CR>:quit<CR>', {noremap=true})
 vim.keymap.set('n', '<leader>q', ':quit<CR>', {noremap=true})
 
