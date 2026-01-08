@@ -1,3 +1,9 @@
+vim.pack.add{
+  { src = 'https://github.com/neovim/nvim-lspconfig' },
+  { src = 'https://github.com/ibhagwan/fzf-lua' },
+  { src = 'https://github.com/ellisonleao/gruvbox.nvim' },
+}
+
 vim.g.mapleader = ' '
 
 -- buffers and navigation
@@ -16,11 +22,9 @@ vim.keymap.set('n', '<leader>wv', '<C-w>v<CR>', {noremap=true})
 vim.keymap.set('n', '<leader>wq', ':write<CR>:quit<CR>', {noremap=true})
 vim.keymap.set('n', '<leader>q', ':quit<CR>', {noremap=true})
 
-vim.pack.add{
-  { src = 'https://github.com/neovim/nvim-lspconfig' },
-  { src = 'https://github.com/ibhagwan/fzf-lua' },
-}
-
+-- vim options
+vim.opt.colorcolumn = "80,120"
+vim.cmd.colorscheme("gruvbox")
 -- plugin configurations
 --
 -- lsp-config
