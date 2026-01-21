@@ -1,0 +1,6 @@
+alias v='nvim'
+alias vv='nvim .'
+alias vvv='nvim .'
+alias sl='ls'
+alias ll='lsd'
+alias lll='lsd -l'
